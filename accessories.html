@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUCCI - Accessories</title>
+  <link rel="stylesheet" href="css/accessories.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <button class="hamburger" onclick="toggleSidebar()">☰</button>
+
+  <nav class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="women.html">Women</a></li>
+      <li><a href="men.html">Men</a></li>
+      <li><a href="kids.html">Kids</a></li>
+      <li><a href="accessories.html">Accessories</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="main-content">
+    <div class="accessories-header">
+      <h1>GUCCI Accessories</h1>
+      <p class="subtitle">Luxury Craftsmanship & Timeless Elegance</p>
+    </div>
+
+    <div class="gender-filters">
+      <button class="gender-btn active" data-gender="all">All Accessories</button>
+      <button class="gender-btn" data-gender="women">Women's</button>
+      <button class="gender-btn" data-gender="men">Men's</button>
+    </div>
+
+    <div class="category-filters">
+      <button class="filter-btn active" data-category="all">All Categories</button>
+      <button class="filter-btn" data-category="jewelry">Jewelry</button>
+      <button class="filter-btn" data-category="scarves">Scarves</button>
+      <button class="filter-btn" data-category="sunglasses">Sunglasses</button>
+      <button class="filter-btn" data-category="belts">Belts</button>
+      <button class="filter-btn" data-category="watches">Watches</button>
+    </div>
+
+    <div class="accessories-grid">
+      <!-- Women's Jewelry -->
+      <div class="accessory-card" data-category="jewelry" data-gender="women">
+        <div class="card-image">
+          <img src="accessories/interlocking g signet ring.webp" alt="Gucci Ring">
+        </div>
+        <div class="card-info">
+          <h3>Interlocking G Ring</h3>
+          <p class="item-description">Sterling silver with aged finish</p>
+          <div class="gender-tag women">Women's</div>
+          <div class="price">₱19,992.35</div>
+        </div>
+      </div>
+
+      <div class="accessory-card" data-category="jewelry" data-gender="women">
+        <div class="card-image">
+          <img src="accessories/lion head necklace.jpg" alt="Gucci Necklace">
+        </div>
+        <div class="card-info">
+          <h3>Lion Head Necklace</h3>
+          <p class="item-description">Antique gold-toned metal with crystals</p>
+          <div class="gender-tag women">Women's</div>
+          <div class="price">₱21,708.45</div>
+        </div>
+      </div>
+
+      <div class="accessory-card" data-category="jewelry" data-gender="women">
+        <div class="card-image">
+          <img src="men_top/trademark-oval-bracelet-in.webp" alt="Gucci Bracelet">
+        </div>
+        <div class="card-info">
+          <h3>Trademark Oval Bracelet</h3>
+          <p class="item-description">Grey GG supreme canvas with 925 sterling silver</p>
+          <div class="gender-tag women">Women's</div>
+          <div class="price">₱420.00</div>
+        </div>
+      </div>
+
+      <!-- Women's Scarves -->
+      <div class="accessory-card" data-category="scarves" data-gender="women">
+        <div class="card-image">
+          <img src="accessories/flora silk scarf.jpg" alt="Gucci Silk Scarf">
+        </div>
+        <div class="card-info">
+          <h3>Flora Silk Scarf</h3>
+          <p class="item-description">100% silk with signature floral print</p>
+          <div class="gender-tag women">Women's</div>
+          <div class="price">₱29,993.55</div>
+        </div>
+      </div>
+
+      <!-- Women's Sunglasses -->
+      <div class="accessory-card" data-category="sunglasses" data-gender="women">
+        <div class="card-image">
+          <img src="accessories/oversize_glasses.webp" alt="Gucci Sunglasses">
+        </div>
+        <div class="card-info">
+          <h3>Oversized Sunglasses</h3>
+          <p class="item-description">Acetate frame with gold metal details</p>
+          <div class="gender-tag women">Women's</div>
+          <div class="price">₱27,988.56</div>
+        </div>
+      </div>
+
+      <!-- Men's Belts -->
+      <div class="accessory-card" data-category="belts" data-gender="men">
+        <div class="card-image">
+          <img src="accessories/gg supreme belt.webp" alt="Gucci GG Belt">
+        </div>
+        <div class="card-info">
+          <h3>GG Supreme Belt</h3>
+          <p class="item-description">Canvas with leather trim and GG buckle</p>
+          <div class="gender-tag men">Men's</div>
+          <div class="price">₱25,703.32</div>
+        </div>
+      </div>
+
+      <div class="accessory-card" data-category="belts" data-gender="men">
+        <div class="card-image">
+          <img src="accessories/leather belt with double g.webp" alt="Gucci Leather Belt">
+        </div>
+        <div class="card-info">
+          <h3>Leather Belt with Double G</h3>
+          <p class="item-description">Black leather with silver buckle</p>
+          <div class="gender-tag men">Men's</div>
+          <div class="price">₱29,702.66</div>
+        </div>
+      </div>
+
+      <!-- Men's Watches -->
+      <div class="accessory-card" data-category="watches" data-gender="men">
+        <div class="card-image">
+          <img src="accessories/timeless watch.webp" alt="Gucci Watch">
+        </div>
+        <div class="card-info">
+          <h3>G-Timeless Watch</h3>
+          <p class="item-description">Steel case with black leather strap</p>
+          <div class="gender-tag men">Men's</div>
+          <div class="price">₱46,838.81</div>
+        </div>
+      </div>
+
+      <div class="accessory-card" data-category="watches" data-gender="men">
+        <div class="card-image">
+          <img src="women_watch/g-timeless-38mm.webp" alt="Gucci Watch">
+        </div>
+        <div class="card-info">
+          <h3>G-Timeless 38mm</h3>
+          <p class="item-description">Silver-tone stainless steel with sapphire glass</p>
+          <div class="gender-tag men">Men's</div>
+          <div class="price">₱102,438.38</div>
+        </div>
+      </div>
+
+      <div class="accessory-card" data-category="watches" data-gender="men">
+        <div class="card-image">
+          <img src="women_watch/40mm-dive.webp" alt="Gucci Watch">
+        </div>
+        <div class="card-info">
+          <h3>40mm Dive Watch</h3>
+          <p class="item-description">Stainless steel case with automatic movement</p>
+          <div class="gender-tag men">Men's</div>
+          <div class="price">₱140,331.13</div>
+        </div>
+      </div>
+
+      <!-- Men's Sunglasses -->
+      <div class="accessory-card" data-category="sunglasses" data-gender="men">
+        <div class="card-image">
+          <img src="accessories/aviator sunglasses.webp" alt="Gucci Men's Sunglasses">
+        </div>
+        <div class="card-info">
+          <h3>Aviator Sunglasses</h3>
+          <p class="item-description">Metal frame with gradient lenses</p>
+          <div class="gender-tag men">Men's</div>
+          <div class="price">₱22,276.99</div>
+        </div>
+      </div>
+
+      <!-- Men's Jewelry -->
+      <div class="accessory-card" data-category="jewelry" data-gender="men">
+        <div class="card-image">
+          <img src="accessories/interlocking g signet ring.webp" alt="Gucci Men's Ring">
+        </div>
+        <div class="card-info">
+          <h3>Interlocking G Signet Ring</h3>
+          <p class="item-description">Sterling silver with aged finish</p>
+          <div class="gender-tag men">Men's</div>
+          <div class="price">₱23,985.99</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 GUCCI. This website is for project purposes only.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/michellejoypretty.matel" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/iiimxxchelle" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.twitter.com/michellejoymatel" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('active');
+    }
+
+    // Close sidebar when clicking outside
+    document.addEventListener('click', function(event) {
+      const sidebar = document.getElementById('sidebar');
+      const hamburger = document.querySelector('.hamburger');
+      
+      if (!sidebar.contains(event.target) && !hamburger.contains(event.target)) {
+        sidebar.classList.remove('active');
+      }
+    });
+
+    // Filter functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const genderBtns = document.querySelectorAll('.gender-btn');
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const accessoryCards = document.querySelectorAll('.accessory-card');
+      
+      // Gender filter
+      genderBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          genderBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          
+          const gender = this.getAttribute('data-gender');
+          filterCards(gender, getActiveCategory());
+        });
+      });
+      
+      // Category filter
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          
+          const category = this.getAttribute('data-category');
+          filterCards(getActiveGender(), category);
+        });
+      });
+      
+      function getActiveGender() {
+        return document.querySelector('.gender-btn.active').getAttribute('data-gender');
+      }
+      
+      function getActiveCategory() {
+        return document.querySelector('.filter-btn.active').getAttribute('data-category');
+      }
+      
+      function filterCards(gender, category) {
+        accessoryCards.forEach(card => {
+          const cardGender = card.getAttribute('data-gender');
+          const cardCategory = card.getAttribute('data-category');
+          
+          const genderMatch = gender === 'all' || cardGender === gender;
+          const categoryMatch = category === 'all' || cardCategory === category;
+          
+          if (genderMatch && categoryMatch) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
