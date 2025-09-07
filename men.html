@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUCCI Men - Luxury Fashion</title>
+  <link rel="stylesheet" href="css/men.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <button class="hamburger" onclick="toggleSidebar()">☰</button>
+
+  <nav class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="women.html">Women</a></li>
+      <li><a href="men.html">Men</a></li>
+      <li><a href="kids.html">Kids</a></li>
+      <li><a href="accessories.html">Accessories</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search products..." class="search-bar">
+      <i class="fas fa-search search-icon"></i>
+    </div>
+
+    <!-- Title -->
+    <div class="title-section">
+      <h1>MEN'S COLLECTION</h1>
+    </div>
+
+    <!-- Category Filters -->
+    <div class="category-filters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="top">Topwear</button>
+      <button class="filter-btn" data-category="bottom">Bottomwear</button>
+      <button class="filter-btn" data-category="shoes">Footwear</button>
+      <button class="filter-btn" data-category="bags">Bags</button>
+    </div>
+
+    <!-- Featured Products -->
+    <div class="featured-section">
+      <div class="product-card" data-category="top">
+        <img src="men_top/white.jpg" alt="Classic Shirt" class="product-image">
+        <div class="product-info">
+          <h3>GUCCI Oversize Washed T-shirt </h3>
+          <p>A clean, white oversized tee with Gucci logo print—perfect
+             for bold, elevated casual styling</p>
+          <div class="price">₱37,400.00</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="top">
+        <img src="men_top/jersey" alt="T-shirt" class="product-image">
+        <div class="product-info">
+          <h3>Gucci Men Logo Cotton Jersey T‑Shirt</h3>
+          <p>A soft, logo-emblazoned jersey tee—versatile and priced about</p>
+          <div class="price">₱25,374.86</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="top">
+        <img src="men_top/yoy.avif" alt="T-shirt" class="product-image">
+        <div class="product-info">
+          <h3>Gucci Logo‑Embroidered Piqué Polo Shirt</h3>
+          <p>A classic polo with refined pique knit,
+             featuring embroidered logo—it blends elegance with 
+             branding in one.</p>
+          <div class="price">₱51,400.00</div>
+        </div>
+      </div>
+
+       <div class="product-card" data-category="top">
+        <img src="men_top/jacquard.webp" alt="suit" class="product-image">
+        <div class="product-info">
+          <h3>Gucci GG wool jacquard suit men</h3>
+          <p>Stand out with the full GG jacquard pattern in a rich oxford blue.</p>
+          <div class="price">₱192,026.63</div>
+        </div>
+      </div>
+
+      
+       <div class="product-card" data-category="top">
+        <img src="men_top/sweater.avif" alt="sweater" class="product-image">
+        <div class="product-info">
+          <h3>Cotton jersey Sweater with Gucci logo</h3>
+          <p>Crafted from white cotton jersey, this T-shirt features a Gucci
+             embroidery on the front and a Gucci print on the back..</p>
+          <div class="price">₱56.888.89</div>
+        </div>
+      </div>
+
+        <div class="product-card" data-category="top">
+        <img src="men_top/pink.avif" alt="sweater" class="product-image">
+        <div class="product-info">
+          <h3>Cotton polo shirt with embroidery</h3>
+          <p> Crafted from white cotton piquet, this polo T-shirt features a Gucci embroidery.</p>
+          <div class="price">₱60.888.89</div>
+        </div>
+      </div>
+
+       <div class="product-card" data-category="top">
+        <img src="men_top/gg.webp " alt="sweater" class="product-image">
+        <div class="product-info">
+          <h3>GG cotton piquet jacquard polo shirt</h3>
+          <p>  This regular fit polo shirt is presented in a GG cotton piquet jacquard
+             and comes complete with a striped polo collar.</p>
+          <div class="price">₱73.396.96</div>
+        </div>
+      </div>
+
+             <div class="product-card" data-category="top">
+        <img src="men_top/jacket" alt="jacket" class="product-image">
+        <div class="product-info">
+          <h3>Gucci Interlocking‑G‑print cotton hoodie</h3>
+          <p>A cozy, bold statement hoodie featuring the iconic G motif. Great for streetwear-inspired luxury.</p>
+          <div class="price">₱65,595.24</div>
+        </div>
+      </div>
+
+    
+      <div class="product-card" data-category="top">
+        <img src="men_top/damit.avif " alt="sweater" class="product-image">
+        <div class="product-info">
+          <h3>Web Stripe cotton-blend piquÃ© polo shirt</h3>
+          <p>Material: 97% cotton, 3% elastane. Care instructions: machine wash cold. Made in Italy. Designer color name: Grey Melange/Mix. Pockets: breast pocket. Collar: polo collar. Cotton.</p>
+          <div class="price">₱50,446.99</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="top">
+        <img src="men_top/polo-shirt" alt="sweater" class="product-image">
+        <div class="product-info">
+          <h3>GG embroidered cotton-blend polo shirt</h3>
+          <p>Material: 97% cotton, 3% elastane. Care instructions: machine wash at 30 degrees. Made in Italy. Designer color name: Dk Grey. Item color: gray. Closure: buttoned front. Pockets: angled chest pockets. Cotton.</p>
+          <div class="price">₱57,326.12</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="top">
+        <img src="men_top/ikaw.avif" alt="sweater" class="product-image">
+        <div class="product-info">
+          <h3>Print short-sleeved T-shirt</h3>
+          <p> purple/green mesh detailing all-over logo print round neck short sleeves straight hem.</p>
+          <div class="price">₱47,165.81</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="top">
+        <img src="men_top/jacket.avif " alt="sweater" class="product-image">
+        <div class="product-info">
+          <h3>Navy stretch cotton blend polo shirt</h3>
+          <p>navy blue cotton blend ribbed knit short front button fastening polo collar polka dot embroidery long sleeves ribbed cuffs and hem.</p>
+          <div class="price">₱347,054.76</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="top">
+        <img src="men_top/blue.avif" alt="sweater" class="product-image">
+        <div class="product-info">
+          <h3>GG Supreme cotton polo shirt</h3>
+          <p>blue/red/beige cotton signature GG Supreme print stripe detailing polo collar front button placket short sleeves straight hem.</p>
+          <div class="price">₱89,213.84</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="top">
+        <img src="men_top/printed.avif" alt="sweater" class="product-image">
+        <div class="product-info">
+          <h3>Printed cotton T-shirt</h3>
+          <p>white cotton lightweight jersey crew neck Gucci University print short sleeves straight hem.</p>
+          <div class="price">₱26,077.68</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="top">
+        <img src="men_top/ganda.avif" alt="sweater" class="product-image">
+        <div class="product-info">
+          <h3>GG terry-cloth polo shirt</h3>
+          <p>red/white/blue cotton terry-cloth effect classic GG canvas signature Web detailing polo collar front button placket long sleeves straight hem.</p>
+          <div class="price">₱94,286.78</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="top">
+        <img src="men_top/lol.avif" alt="sweater" class="product-image">
+        <div class="product-info">
+          <h3>Logo-print T-shirt</h3>
+          <p>anthracite grey cotton jersey texture logo print to the front crew neck drop shoulder short sleeves straight hem.</p>
+          <div class="price">₱37,362.94</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="bottom">
+        <img src="men_top/lasered.avif" alt="pants" class="product-image">
+        <div class="product-info">
+          <h3>Lasered Double G denim pant</h3>
+          <p> Cut from a washed certified cotton denim, these slim fit pants reveal a
+             lasered Double G logo and a Gucci jacron label.</p>
+          <div class="price">₱63.161.44</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="bottom">
+        <img src="men_top/denim.avif" alt="Designer Jeans" class="product-image">
+        <div class="product-info">
+          <h3>Tapered denim pant with Web </h3>
+          <p> These tapered jeans are made from a blue washed denim and feature a Web loop detail as well as a
+             Gucci Rosso Ancora naplak label.</p>
+          <div class="price">₱77.523.75</div>
+        </div>
+      </div>
+
+       <div class="product-card" data-category="bottom">
+        <img src="men_top/embossed.avif" alt="Designer Jeans" class="product-image">
+        <div class="product-info">
+          <h3>Embossed wool twill pants </h3>
+          <p> This pair of pants in refined wool twill feature multiple pockets and an
+             embossed Gucci logo.</p>
+          <div class="price">₱91.879.94</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="bottom">
+        <img src="men_top/supreme.avif" alt="Designer Jeans" class="product-image">
+        <div class="product-info">
+          <h3>GG Supreme linen shorts </h3>
+          <p> This pair of shorts appears in GG Supreme linen.</p>
+          <div class="price">₱71.766.20</div>
+        </div>
+      </div>
+
+        <div class="product-card" data-category="bottom">
+        <img src="men_top/double.avif" alt="Designer Jeans" class="product-image">
+        <div class="product-info">
+          <h3>Double cotton twill shorts with Web </h3>
+          <p> Inspired by the summer spirit and beach clubs on the Italian coast,
+             this item is part of Gucci Lido.</p>
+          <div class="price">₱64.909.14</div>
+        </div>
+      </div>
+
+       <div class="product-card" data-category="bottom">
+        <img src="men_top/nylon.avif" alt="Designer Jeans" class="product-image">
+        <div class="product-info">
+          <h3>Lightweight GG nylon jacquard short</h3>
+          <p> These boxy shorts are presented in a lightweight GG nylon jacquard,
+             breathing new life into founder Guccio Gucci's monogram.</p>
+          <div class="price">₱100.472.75</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="bottom">
+        <img src="men_top/cargo.avif" alt="pants" class="product-image">
+        <div class="product-info">
+          <h3>GG cargo pants</h3>
+          <p>black concealed front fastening belted waist</p>
+          <div class="price">₱122,851.64</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="bottom">
+        <img src="men_top/trouser.wes.webp" alt="pants" class="product-image">
+        <div class="product-info">
+          <h3>GG Supreme canvas trousers</h3>
+          <p>charcoal grey light brown cotton canvas panelled design GG Supreme canvas belt loops button fly fastening elasticated waistband four front patch pockets two rear jetted pockets elasticated ankles straight leg.</p>
+          <div class="price">₱63.161.44</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="bottom">
+        <img src="men_top/mahogany.avif" alt="pants" class="product-image">
+        <div class="product-info">
+          <h3>Striped drawstring track pants</h3>
+          <p>navy blue/multicolour wool striped edge drawstring fastening waist slim cut two side slit pockets elasticated ankles.</p>
+          <div class="price">₱108,922.52</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="bottom">
+        <img src="men_top/shorts.avif" alt="pants" class="product-image">
+        <div class="product-info">
+          <h3>Cotton poplin shorts</h3>
+          <p>Material: 100% cotton. Care instructions: hand wash. Made in Italy. Designer color name: Blue Japan. Item color: blue. Coating: 100% polyurethane. Pocket lining: 100% cotton. Closure: drawstring. Elasticated waistband. Pockets: side slit pockets, back pockets.</p>
+          <div class="price">₱71,084.39</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="bottom">
+        <img src="men_top/balakadiyan.avif" alt="pants" class="product-image">
+        <div class="product-info">
+          <h3>GG Supreme intarsia-knit shorts</h3>
+          <p>midnight blue/beige cotton intarsia knit all-over signature Double G logo wide leg two side slit pockets below-knee length elasticated waistband with internal drawstring unlined.</p>
+          <div class="price">₱42,000.55</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="bottom">
+        <img src="men_top/syii.avif" alt="pants" class="product-image">
+        <div class="product-info">
+          <h3>Panelled ripstop cargo shorts</h3>
+          <p>olive green cotton ripstop texture panelled design GG Supreme canvas pleat detailing mid-rise belt loops concealed fly and button fastening adjustable waist strap two diagonal pockets to the sides two side cargo pockets two rear flap pockets wide leg below-knee length.</p>
+          <div class="price">₱59,464.99</div>
+        </div>
+      </div>
+
+      
+      <div class="product-card" data-category="shoes">
+        <img src="men_shoes/leather_loafers.avif" alt="Designer Sneakers" class="product-image">
+        <div class="product-info">
+          <h3>Horsebit patent leather loafers</h3>
+          <p>The Jordaan loafer with Horsebit, representative of Gucci heritage, speaks of classic elegance.</p>
+          <div class="price">₱64,778.52 </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="shoes">
+        <img src="men_shoes/stripe.avif" alt="Designer Sneakers" class="product-image">
+        <div class="product-info">
+          <h3>Re-Motion Web Stripe suede-trimmed sneakers</h3>
+          <p>Upper: fabric. Lining: leather. Sole: leather insole, rubber sole. Toe shape: round toe.Designer color name.Item color: green. Trim: leather. Closure: lace-up.</p>
+          <div class="price">₱56,179.60</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="shoes">
+        <img src="men_shoes/sneakers.avif" alt="Designer Sneakers" class="product-image">
+        <div class="product-info">
+          <h3>G75 suede-trimmed sneakers</h3>
+          <p> fabric. Lining: leather. Sole: leather insole, rubber sole. Toe shape: round toe. Made in Italy. Includes: shoe box, extra laces, dust bag. Designer color name: Lt C/G.F-B-W/F.M.V/M. Item color: multicolor. Details: leather (suede).</p>
+          <div class="price">₱62,485.47 </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="shoes">
+        <img src="men_shoes/sapatos.avif" alt="Designer Sneakers" class="product-image">
+        <div class="product-info">
+          <h3>Horsebit 1953 GG debossed suede loafers</h3>
+          <p>Upper: leather (suede). Lining: leather. Sole: leather insole and sole. Toe shape: almond toe. Made in Italy. Includes: shoe box, dust bags. Designer color name: Oat/Oat/Oat. Item color: beige. Hardware color: silver.</p>
+          <div class="price">₱60,192.43</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="shoes">
+        <img src="men_shoes/michellehuwaw.avif" alt="Designer Sneakers" class="product-image">
+        <div class="product-info">
+          <h3>Screener sneakers</h3>
+          <p>blue/white leather panelled design perforated detailing signature Double G logo enamel detail logo patch at the tongue branded heel counter round toe front lace-up fastening branded leather insole flat rubber sole.</p>
+          <div class="price">₱41,478.66</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="shoes">
+        <img src="men_shoes/joypalatoe.avif" alt="Designer Sneakers" class="product-image">
+        <div class="product-info">
+          <h3>Ripple sneakers</h3>
+          <p>white/light grey mesh design canvas colour-block panelled design front lace-up fastening embossed detail signature Interlocking G logo perforated toebox round toe branded insole chunky rubber sole.</p>
+          <div class="price">₱67,912.90</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="shoes">
+        <img src="men_shoes/hula.avif" alt="Designer Sneakers" class="product-image">
+        <div class="product-info">
+          <h3>Leather slides</h3>
+          <p>Upper: leather. Lining: leather. Sole: leather insole and sole. Toe shape: round open toe. Made in Italy. Includes: shoe box, dust bag. Designer color name: Nero. Item color: black. Hardware color: silver.</p>
+          <div class="price">₱51,020.25</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="shoes">
+        <img src="men_shoes/ganda.avif" alt="Designer Sneakers" class="product-image">
+        <div class="product-info">
+          <h3>GG suede sandals</h3>
+          <p>Upper: leather. Lining: fabric. Sole: leather insole, rubber sole. Toe shape: square open toe. Made in Italy. Includes: shoe box, dust bags. Designer color name: Black. Closure: buckle fastening. Hardware color: silver.</p>
+          <div class="price">₱62,485.47</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="shoes">
+        <img src="men_shoes/retri.avif" alt="Designer Sneakers" class="product-image">
+        <div class="product-info">
+          <h3>Ace GG sneakers</h3>
+          <p> fabric. Lining: fabric. Sole: leather insole, rubber sole. Toe shape: round toe. Made in Italy. Includes: shoe box, dust bags. Designer color name: Black/Brb/Hi.Red. Closure: lace-up.</p>
+          <div class="price">₱50,446.99</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="shoes">
+        <img src="men_shoes/dikoalam.avif" alt="Designer Sneakers" class="product-image">
+        <div class="product-info">
+          <h3>Basket distressed leather sneakers</h3>
+          <p>green/black/white calf leather panelled design distressed finish signature Interlocking G logo details embossed stripe detailing logo patch at the tongue round toe perforated toebox front lace-up fastening mesh lining padded ankle branded leather insole flat rubber sole.</p>
+          <div class="price">₱38,327.83</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="shoes">
+        <img src="men_shoes/pula.avif" alt="Designer Sneakers" class="product-image">
+        <div class="product-info">
+          <h3>Interlocking G pool slides</h3>
+          <p>bright red/white signature Interlocking G logo slip-on style single toe strap round open toe branded insole rubber sole.</p>
+          <div class="price">₱29,621.33</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="shoes">
+        <img src="men_shoes/boots.avif" alt="Designer Sneakers" class="product-image">
+        <div class="product-info">
+          <h3>Contrast-panel lace-up boots</h3>
+          <p>black suede/mesh panelling round toe front lace-up fastening logo-embroidered tongue ankle-length branded insole ridged rubber sole.</p>
+          <div class="price">₱62,261.27</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="shoes">
+        <img src="men_shoes/purpuk.avif" alt="Designer Sneakers" class="product-image">
+        <div class="product-info">
+          <h3>Horsebit mules</h3>
+          <p>black leather trim classic GG canvas flat rubber sole branded leather insole signature Horsebit detail round toe slip-on style</p>
+          <div class="price">₱48,088.49</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="shoes">
+        <img src="men_shoes/green.avif" alt="Designer Sneakers" class="product-image">
+        <div class="product-info">
+          <h3>Basket high-top sneakers</h3>
+          <p>green/black/white debossed logo to the side signature Interlocking G logo plaque colour-block design panelled design round toe perforated toebox front lace-up fastening logo patch at the tongue branded insole padded ankle flat rubber sole.</p>
+          <div class="price">₱52,443.57</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="shoes">
+        <img src="men_shoes/ako.avif" alt="Designer Sneakers" class="product-image">
+        <div class="product-info">
+          <h3>Basket low-top sneakers</h3>
+          <p>multicolour contrasting panel detail round toe front lace-up fastening logo patch at the tongue branded insole rubber sole.</p>
+          <div class="price">₱54,203.84</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="shoes">
+        <img src="men_shoes/ulol.avif" alt="Designer Sneakers" class="product-image">
+        <div class="product-info">
+          <h3>GG-motif leather slippers</h3>
+          <p>black leather raised logo detail crossover strap detail open toe branded leather insole flat leather sole slip-on style.</p>
+          <div class="price">₱25,279.94</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="bags">
+        <img src="men_shoes/bag.evif.webp" alt="Business Briefcase" class="product-image">
+        <div class="product-info">
+          <h3>Small Jumbo GG belt bag</h3>
+          <p>black This piece comes complete with a protective dust bag.</p>
+          <div class="price">₱75,132.00</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="bags">
+        <img src="men_shoes/cros.avif" alt="Luxury Backpack" class="product-image">
+        <div class="product-info">
+          <h3>GG leather crossbody bag</h3>
+          <p>leather. Lining: fabric, leather. Made in Italy. Designer color name: Dk.Vin.Ol.V.O/D.V.O./. Item color: green. Hardware color: brass. Internal details: internal slot pocket, single compartment. Zipped front pocket. Adjustable shoulder strap. Closure: zipped top. Cotton.</p>
+          <div class="price">₱90,575.27</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="bags">
+        <img src="men_shoes/leter.avif" alt="Business Briefcase" class="product-image">
+        <div class="product-info">
+          <h3>Logo-embossed belt bag</h3>
+          <p>black foldover top front zip fastening branded zip puller adjustable waist strap front logo embossed eyelet detailing signature Web-stripe trim rear zip-fastening pocket main compartment internal zip-fastening pocket full lining.</p>
+          <div class="price">₱93,467.05</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="bags">
+        <img src="men_shoes/backpack.avif" alt="Business Briefcase" class="product-image">
+        <div class="product-info">
+          <h3>GG Supreme-print backpack</h3>
+          <p>dark grey recycled polyester ripstop texture signature GG Supreme print appliqué logo grosgrain ribbon trim single top handle adjustable shoulder straps two side zip-fastening pockets two buckle-strap fastenings main compartment internal zip-fastening pocket debossed internal logo unlined top drawstring fastening foldover top with magnetic fastening.</p>
+          <div class="price">₱145,820.87</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="bags">
+        <img src="men_shoes/cross.avif" alt="Business Briefcase" class="product-image">
+        <div class="product-info">
+          <h3>GG canvas leather-trimmed crossbody bag</h3>
+          <p>Material: fabric. Lining: fabric. Made in Italy. Designer color name: Black/Black/Brb. Internal details: card slot. Adjustable shoulder strap. Closure: zipped top. Zipped front pocket. Includes: dust bag.</p>
+          <div class="price">₱90,575.27</div>
+        </div>
+      </div>
+
+           <div class="product-card" data-category="bags">
+        <img src="men_shoes/mini.avif" alt="Business Briefcase" class="product-image">
+        <div class="product-info">
+          <h3>Super mini GG messenger bag</h3>
+          <p>Mini messenger bag in GG Supreme canvas with leather details</p>
+          <div class="price">₱65,561.86</div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="bags">
+        <img src="men_shoes/bagi.avif" alt="Business Briefcase" class="product-image">
+        <div class="product-info">
+          <h3>GG-canvas shoulder bag</h3>
+          <p>chocolate brown classic GG canvas leather trim foldover top with magnetic fastening decorative buckle
+             detail adjustable detachable shoulder strap main compartment slip pocket to the front internal logo patch.</p>
+          <div class="price">₱82,368.98</div>
+        </div>
+      </div>  
+
+      <div class="product-card" data-category="bags">
+        <img src="men_shoes/me.avif" alt="Business Briefcase" class="product-image">
+        <div class="product-info">
+          <h3>Small Neo Vintage messenger bag</h3>
+          <p>beige/brown GG Supreme canvas coated finish logo patch to the front feline head plaque to the front
+             signature Web detailing leather trim magnetic fastening adjustable shoulder strap front and rear flap pockets main compartment internal logo patch canvas lining gold-tone hardware This piece comes complete with a protective dust bag.</p>
+          <div class="price">₱76,232.01</div>
+        </div>
+      </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 GUCCI. This website is for project purposes only.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/michellejoypretty.matel" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/iiimxxchelle" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.twitter.com/michellejoymatel" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    const sidebar = document.getElementById('sidebar');
+    const hamburger = document.querySelector('.hamburger');
+
+    function toggleSidebar() {
+      sidebar.classList.toggle('active');
+    }
+
+    document.addEventListener('click', function (event) {
+      const isClickInsideSidebar = sidebar.contains(event.target);
+      const isClickOnHamburger = hamburger.contains(event.target);
+
+      if (!isClickInsideSidebar && !isClickOnHamburger) {
+        sidebar.classList.remove('active');
+      }
+    });
+
+    hamburger.addEventListener('click', function (event) {
+      event.stopPropagation();
+    });
+
+    // Search functionality
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', function() {
+      const searchTerm = this.value.toLowerCase();
+      const products = document.querySelectorAll('.product-card');
+      
+      products.forEach(product => {
+        const productName = product.querySelector('h3').textContent.toLowerCase();
+        if (productName.includes(searchTerm)) {
+          product.style.display = 'block';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    });
+
+    // Category filter functionality
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        // Remove active class from all buttons
+        filterBtns.forEach(b => b.classList.remove('active'));
+        // Add active class to clicked button
+        this.classList.add('active');
+        
+        const category = this.dataset.category;
+        const products = document.querySelectorAll('.product-card');
+        
+        products.forEach(product => {
+          if (category === 'all' || product.dataset.category === category) {
+            product.style.display = 'block';
+          } else {
+            product.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

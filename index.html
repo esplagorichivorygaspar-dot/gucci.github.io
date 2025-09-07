@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUCCI - Luxury Fashion</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <button class="hamburger" onclick="toggleSidebar()">☰</button>
+
+  <nav class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="women.html">Women</a></li>
+      <li><a href="men.html">Men</a></li>
+      <li><a href="kids.html">Kids</a></li>
+      <li><a href="accessories.html">Accessories</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="luxury-showcase">
+    <div class="showcase-content">
+      <div class="showcase-title">GUCCI</div>
+      <p class="showcase-subtext">Crafting Italian Excellence Since 1921</p>
+      <a href="slider.html" class="btn">Discover Collection</a>
+    </div>
+  </section>
+
+  <section class="portrait-cards">
+    <div class="card">
+      <img src="img/model.jpg" alt="Portrait 1" class="card-image">
+    </div>
+    <div class="card">
+      <img src="img/model_b.jpg" alt="Portrait 2" class="card-image">
+    </div>
+    <div class="card">
+      <img src="img/model_g.jpg" alt="Portrait 3" class="card-image">
+    </div>
+  </section>
+
+  <section class="quote">
+    <blockquote>"Quality is remembered long after price is forgotten." – Aldo Gucci</blockquote>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 GUCCI. This website is for project purposes only.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/michellejoypretty.matel" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/iiimxxchelle" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.twitter.com/michellejoymatel" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    const sidebar = document.getElementById('sidebar');
+    const hamburger = document.querySelector('.hamburger');
+
+    function toggleSidebar() {
+      sidebar.classList.toggle('active');
+    }
+
+    document.addEventListener('click', function (event) {
+      const isClickInsideSidebar = sidebar.contains(event.target);
+      const isClickOnHamburger = hamburger.contains(event.target);
+
+      if (!isClickInsideSidebar && !isClickOnHamburger) {
+        sidebar.classList.remove('active');
+      }
+    });
+
+    hamburger.addEventListener('click', function (event) {
+      event.stopPropagation();
+    });
+  </script>
+
+</body>
+</html>
